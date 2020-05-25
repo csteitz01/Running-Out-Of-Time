@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 6029596105169589754}
   - component: {fileID: 6029596105169589756}
   - component: {fileID: 6029596105169589755}
-  m_Layer: 0
+  - component: {fileID: 6029596105169589759}
+  m_Layer: 9
   m_Name: Clock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 6029596104960616290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.58, y: -3.84, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -103,7 +104,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!58 &6029596105169589756
 CircleCollider2D:
@@ -134,3 +135,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 100
+  jumpSpeed: 60
+--- !u!114 &6029596105169589759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6029596104960616290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faa57a87cf1ab2d438b6ec56672f442c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 2
