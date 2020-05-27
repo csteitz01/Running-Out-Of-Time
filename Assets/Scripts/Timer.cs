@@ -3,36 +3,51 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
     public TextMeshProUGUI textMesh;
-    public float secondsLeft = 30;
-    public bool takingAway = false;
+    [SerializeField] float secondsLeft = 30f;
+    //public bool freeze = false;
 
     private void Start()
     {
         textMesh.GetComponent<TextMeshProUGUI>().text = "" + secondsLeft;
     }
 
-    private void Update()
+    public void TimeGo()
     {
-        secondsLeft -= 1 * Time.deltaTime;
-        textMesh.GetComponent<TextMeshProUGUI>().text = secondsLeft.ToString("0");
+            secondsLeft -= Time.deltaTime;
+            textMesh.GetComponent<TextMeshProUGUI>().text = secondsLeft.ToString("0");
 
-        if (secondsLeft <= 0)
-        {
-            secondsLeft = 0;
+            if (secondsLeft <= 0)
+            {
+                var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+                SceneManager.LoadScene(currentSceneIndex);
+            }
         }
+        
+
+    public void TimeAdd (float timeAmount)
+    {
+        secondsLeft += timeAmount;
     }
 
-    //IEnumerator TimerTake()
+    //public void TimeStop (float timeAmount)
     //{
-    //    takingAway = true;
-    //    yield return new WaitForSeconds(1);
-    //    secondsLeft -= 1;
-        
-    //    takingAway = false;
+    //    while (timeAmount > 0)
+    //    {
+    //        freeze = true;
+    //        timeAmount -= 1 * Time.deltaTime;
+    //        Debug.Log(timeAmount);
+    //    }
+    //    freeze = false;
     //}
+
+    private void Update()
+    {
+        TimeGo();
+    }
 
 }

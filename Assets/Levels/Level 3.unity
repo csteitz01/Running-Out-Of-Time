@@ -136,7 +136,7 @@ PrefabInstance:
     - target: {fileID: 1228119762323121814, guid: e5ed8c84306b5fc4fbd890b8acb686de,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 986
+      value: 976.7
       objectReference: {fileID: 0}
     - target: {fileID: 1228119762323121814, guid: e5ed8c84306b5fc4fbd890b8acb686de,
         type: 3}
@@ -6953,6 +6953,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8548d0433fb25c64684dbe4c07ef10d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timeToAdd: 2
+  backRotation: 24
 --- !u!1001 &1528130734019100501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6968,7 +6970,7 @@ PrefabInstance:
     - target: {fileID: 1528130732581535937, guid: 1612c5080a9cef64bb5067b47053ee89,
         type: 3}
       propertyPath: m_Name
-      value: Timer
+      value: Game Session
       objectReference: {fileID: 0}
     - target: {fileID: 1528130732581535939, guid: 1612c5080a9cef64bb5067b47053ee89,
         type: 3}
@@ -7290,7 +7292,7 @@ PrefabInstance:
     - target: {fileID: 302203904691181605, guid: 3052b735e4862334a9279acb4f4e8290,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 954
+      value: 960
       objectReference: {fileID: 0}
     - target: {fileID: 302203904691181605, guid: 3052b735e4862334a9279acb4f4e8290,
         type: 3}

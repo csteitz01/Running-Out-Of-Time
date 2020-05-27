@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -6968,7 +6968,7 @@ PrefabInstance:
     - target: {fileID: 1528130732581535937, guid: 1612c5080a9cef64bb5067b47053ee89,
         type: 3}
       propertyPath: m_Name
-      value: Timer
+      value: Game Session
       objectReference: {fileID: 0}
     - target: {fileID: 1528130732581535939, guid: 1612c5080a9cef64bb5067b47053ee89,
         type: 3}
@@ -7181,7 +7181,7 @@ PrefabInstance:
     - target: {fileID: 8341490694196030929, guid: a4a0b22bb60fc77488e23deb20e77f55,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -202.05835
+      value: -254.84497
       objectReference: {fileID: 0}
     - target: {fileID: 8341490694196030929, guid: a4a0b22bb60fc77488e23deb20e77f55,
         type: 3}
