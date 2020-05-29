@@ -26,7 +26,7 @@ public class Timer : MonoBehaviour
                 var currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
                 SceneManager.LoadScene(currentSceneIndex);
             }
-        }
+    }
         
 
     public void TimeAdd (float timeAmount)

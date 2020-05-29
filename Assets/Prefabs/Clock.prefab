@@ -107,10 +107,9 @@ GameObject:
   - component: {fileID: 6029596105169589756}
   - component: {fileID: 6029596105169589755}
   - component: {fileID: 6029596105169589759}
-  - component: {fileID: 646167350833761264}
   m_Layer: 9
   m_Name: Clock
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -230,7 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 100
-  jumpSpeed: 60
+  jumpSpeed: 55
 --- !u!114 &6029596105169589759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,21 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faa57a87cf1ab2d438b6ec56672f442c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fallMultiplier: 2.5
-  lowJumpMultiplier: 2
---- !u!114 &646167350833761264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6029596104960616290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: faa57a87cf1ab2d438b6ec56672f442c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fallMultiplier: 2.5
+  fallMultiplier: 3
   lowJumpMultiplier: 2
 --- !u!1 &8153050643475057400
 GameObject:
